@@ -58,9 +58,9 @@ a {
 }
 
 /* Сбрасываем стили у кнопок */
-button{
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }

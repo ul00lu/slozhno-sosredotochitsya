@@ -2,7 +2,7 @@
 
 .page {
 	background-image: url(../images/cover-image.png);
-	background-size: covers;
+	background-size: cover;
 	background-position: top center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 	content: '';
 	position: absolute;
 	width: 25px;
-	top: 20px;
+	top: var(--padding-y);
 	right: 0;
 	aspect-ratio: 1;
 	border-right: 1px solid var(--border-corner-color);
@@ -39,16 +39,16 @@
 	content: '';
 	position: absolute;
 	width: 25px;
-	bottom: 20px;
+	bottom: var(--padding-y);
 	left: 0;
 	aspect-ratio: 1;
 	border-bottom: 1px solid var(--border-corner-color);
 	border-left: 1px solid var(--border-corner-color);
 }
 .header__main-title {
-	line-height: 82.5%;
-	
-	font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+	line-height: 84.5%;
+	margin-inline-start: -20px;
+	font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	color: var(--main-title-color);
 	text-shadow: var(--shadow);
 }
@@ -58,15 +58,12 @@
 	justify-self: end;
 }
 
-.header__theme-menu {
-	align-self: start;
-}
 /* Декорация header REC */
 .header__decoration {
 	position: absolute;
 	display: flex;
 	align-items: center;
-	top: 20px;
+	top: var(--padding-y);
 	right: 10px;
 	line-height: 25px;
 	text-transform: uppercase;
@@ -82,19 +79,24 @@
 	margin-inline-start: 10px;
 	box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
+
 /* Кнопки переключения тем */
+
 .header__theme-menu {
 	justify-self: center;
+	align-self: start;
 }
+
 .header__theme-menu-list {
 	display: flex;
 	align-items: center;
-	column-gap: 10px;
+	gap: 10px;
 }
+
 .header__theme-menu-button {
 	padding-inline: 13px;
-	padding-block: 2px;
-	line-height: 18px;
+	padding-block: 1.5px;
+	line-height: 23px;
 	color: var(--accent-color);
 	text-transform: lowercase;
 }
@@ -114,3 +116,28 @@
 	outline: none;
 	border-bottom: var(--outline-switch);
 }
+/* Header ==================================== */
+
+/* Адаптация Header */
+@media (max-width: 768px) {
+	.header__theme-menu {
+		justify-self: end;
+		align-self: center;
+	}
+
+	.header__theme-menu-list {
+		flex-direction: column;
+	}
+
+	.header__text {
+		max-width: 364px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header__main-title {
+		margin-inline-start: 0px;
+		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	}
+}
+/* Адаптация Header ====================================== */

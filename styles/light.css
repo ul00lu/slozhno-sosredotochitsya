@@ -23,3 +23,7 @@
 .theme_light.page {
 	background-image: url('../images/cover-image-light.png');
 }
+
+.theme_light .header__decoration {
+	display: none;
+}

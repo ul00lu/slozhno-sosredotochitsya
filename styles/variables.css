@@ -11,7 +11,14 @@
 	--font-family-base: 'IBM Plex mono', sans-serif;
 	--shadow: 4px 4px 0 var(--accent-color);
 	--outline-switch: 1px solid rgba(255, 0, 112, 0.4);
-	--border-corner-color:#ff0070;
+	--border-corner-color: #ff0070;
 	--padding-y: 20px;
 	--paddind-x: 20px;
+}
+
+@media (max-width: 480px) {
+	:root {
+		--paddind-x: 10px;
+		--padding-y: 10px;
+	}
 }
