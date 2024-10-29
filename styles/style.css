@@ -1,5 +1,115 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+	background-image: url(../images/cover-image.png);
+	background-size: covers;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.decore-bg {
+	background-color: var(--accent-color);
+}
+.title {
+	color: var(--text-color-alt);
+	font-size: inherit;
+}
+/* Header ================================ */
+.header {
+	position: relative;
+	padding-block: var(--padding-y);
+	block-size: 100vh;
+	display: grid;
+	grid-template-rows: 1fr auto 1fr;
+	align-items: center;
+}
+
+.header::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	top: 20px;
+	right: 0;
+	aspect-ratio: 1;
+	border-right: 1px solid var(--border-corner-color);
+	border-top: 1px solid var(--border-corner-color);
+}
+.header::before {
+	content: '';
+	position: absolute;
+	width: 25px;
+	bottom: 20px;
+	left: 0;
+	aspect-ratio: 1;
+	border-bottom: 1px solid var(--border-corner-color);
+	border-left: 1px solid var(--border-corner-color);
+}
+.header__main-title {
+	line-height: 82.5%;
+	font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+	color: var(--main-title-color);
+	text-shadow: var(--shadow);
+}
+
+.header__text {
+	max-width: 491px;
+	justify-self: end;
+}
+
+.header__theme-menu {
+	align-self: start;
+}
+/* Декорация header REC */
+.header__decoration {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 20px;
+	right: 10px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: var(--accent-color);
+}
+.header__decoration::after {
+	content: '';
+	width: 9px;
+	aspect-ratio: 1;
+	background-color: var(--accent-color);
+	display: block;
+	border-radius: 50%;
+	margin-inline-start: 10px;
+	box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+/* Кнопки переключения тем */
+.header__theme-menu {
+	justify-self: center;
+}
+.header__theme-menu-list {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+.header__theme-menu-button {
+	padding-inline: 13px;
+	padding-block: 2px;
+	line-height: 18px;
+	color: var(--accent-color);
+	text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+	--outline-switch: 1px solid rgba(255, 0, 112);
+	outline: var(--outline-switch);
+	pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+	outline: var(--outline-switch);
+}
+
+.header__theme-menu-button:focus-visible {
+	--outline-switch: 1px solid rgba(255, 0, 112);
+	outline: none;
+	border-bottom: var(--outline-switch);
 }
