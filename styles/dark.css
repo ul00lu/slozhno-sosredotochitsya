@@ -4,13 +4,6 @@
   переключая тему
 */
 .page.theme_dark {
-	/* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
-:root.theme-dark {
 	--accent-color: #ff0070;
 	--text-color: #f1b2ce;
 	--main-title-color: #db00ff;
@@ -18,9 +11,8 @@
 	--text-color-alt: #000028;
 	--font-family-base: 'IBM Plex mono', sans-serif;
 	--shadow: 4px 4px 0 var(--accent-color);
-	--padding-y: 20px;
-	--paddind-x: 20px;
 }
+
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -31,8 +23,6 @@
 		--text-color-alt: #000028;
 		--font-family-base: 'IBM Plex mono', sans-serif;
 		--shadow: 4px 4px 0 var(--accent-color);
-		--padding-y: 20px;
-		--paddind-x: 20px;
 	}
 
 	.page {
@@ -43,4 +33,3 @@
 .theme_dark.page {
 	background-image: url('../images/cover-image-dark.png');
 }
-
