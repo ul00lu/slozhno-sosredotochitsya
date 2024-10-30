@@ -9,6 +9,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
 :root.theme-dark {
 	--accent-color: #ff0070;
 	--text-color: #f1b2ce;
@@ -32,7 +33,6 @@
 		--shadow: 4px 4px 0 var(--accent-color);
 		--padding-y: 20px;
 		--paddind-x: 20px;
-    
 	}
 }
 
