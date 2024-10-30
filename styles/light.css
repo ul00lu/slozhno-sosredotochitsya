@@ -38,13 +38,31 @@
 		--shadow: 4px 4px 0 var(--accent-color);
 		--outline-switch: 1px solid rgba(53, 52, 48, 0.4);
 	}
+
+	.page {
+		background-image: url('../images/cover-image-light.png');
+	}
+
+	.header__theme-menu-button_active {
+		--outline-switch: 1px solid rgb(53, 52, 48);
+		outline: var(--outline-switch);
+		pointer-events: none;
+	}
+
+	.header__decoration {
+		display: none;
+	}
+}
+
+.theme_light.page {
+	background-image: url('../images/cover-image-light.png');
 }
 
 .theme_light .header__decoration {
 	display: none;
 }
 
-.header__theme-menu-button_active {
+.theme_light .header__theme-menu-button_active {
 	--outline-switch: 1px solid rgb(53, 52, 48);
 	outline: var(--outline-switch);
 	pointer-events: none;

@@ -1,8 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-	margin: 0 auto;
-	padding-inline: var(--paddind-x);
 	background-image: url(../images/cover-image.png);
 	background-size: cover;
 	background-position: top center;

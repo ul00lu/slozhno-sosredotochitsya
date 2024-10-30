@@ -34,8 +34,13 @@
 		--padding-y: 20px;
 		--paddind-x: 20px;
 	}
+
+	.page {
+		background-image: url('../images/cover-image-dark.png');
+	}
 }
 
 .theme_dark.page {
-		background-image: url('../images/cover-image-dark.png');
-	}
+	background-image: url('../images/cover-image-dark.png');
+}
+

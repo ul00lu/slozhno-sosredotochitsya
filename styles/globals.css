@@ -9,9 +9,11 @@
 body {
 	min-inline-size: 375px;
 	max-inline-size: 1440px;
+	margin: 0 auto;
 	background-color: var(--bg-cover);
 	font-family: var(--font-family-base);
 	font-size: 18px;
+	padding-inline: var(--paddind-x);
 	color: var(--text-color);
 	font-weight: normal;
 	line-height: 23.4px;
