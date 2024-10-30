@@ -200,7 +200,6 @@
 }
 
 .info__link:focus-visible {
-	outline: none;
 	outline: 2px solid var(--text-color);
 }
 
