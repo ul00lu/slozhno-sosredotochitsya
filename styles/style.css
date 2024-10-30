@@ -36,6 +36,7 @@
 /* Header ================================ */
 
 .header {
+	padding-inline: var(--paddind-x);
 	position: relative;
 	padding-block: var(--padding-y);
 	block-size: 100vh;
@@ -164,6 +165,7 @@
 /* Секция Info */
 
 .info {
+	padding-inline: var(--paddind-x);
 	padding-block: 60px;
 }
 
@@ -260,6 +262,7 @@
 /* Секция Gallery */
 
 .gallery {
+	padding-inline: var(--paddind-x);
 	padding-block-start: 20px;
 	padding-block-end: 60px;
 }
@@ -331,6 +334,7 @@
 /* Footer */
 
 .footer {
+	padding-inline: var(--paddind-x);
 	position: relative;
 	height: 100vh;
 	display: flex;
