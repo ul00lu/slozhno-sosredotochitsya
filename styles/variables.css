@@ -9,9 +9,11 @@
 	--main-color: #ff0070;
 	--bg-cover: #000028;
 	--text-color-alt: #000028;
+	--shadow-alt: 2px 2px 0 var(--accent-color);
 	--font-family-base: 'IBM Plex mono', sans-serif;
 	--shadow: 4px 4px 0 var(--accent-color);
-	--outline-switch: 1px solid rgba(255, 0, 112, 0.4);
+	--outline-switch-opacity: 1px solid rgba(255, 0, 112, 0.4);
+	--outline-switch: 1px solid rgb(255, 0, 112);
 	--padding-y: 20px;
 	--paddind-x: 20px;
 }

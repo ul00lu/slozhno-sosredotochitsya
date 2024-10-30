@@ -4,16 +4,17 @@
   переключая тему
 */
 .page.theme_light {
-		--accent-color: #ff8dcb;
+	--accent-color: #ff8dcb;
 	--text-color: #353430;
 	--text-color-alt: #353430;
 	--main-title-color: #ffc2e6;
 	--bg-cover: #fff1f7;
 	--main-color: #353430;
 	--shadow: 4px 4px 0 var(--accent-color);
-	--outline-switch: 1px solid rgba(53, 52, 48, 0.4);
+  	--shadow-alt: 2px 2px 0 var(--accent-color);
+	--outline-switch-opacity: 1px solid rgba(53, 52, 48, 0.4);
+	--outline-switch: 1px solid rgb(53, 52, 48);
 }
-
 
 @media (prefers-color-scheme: light) {
 	:root {
@@ -24,17 +25,13 @@
 		--bg-cover: #fff1f7;
 		--main-color: #353430;
 		--shadow: 4px 4px 0 var(--accent-color);
-		--outline-switch: 1px solid rgba(53, 52, 48, 0.4);
+    	--shadow-alt: 2px 2px 0 var(--accent-color);
+		--outline-switch-opacity: 1px solid rgba(53, 52, 48, 0.4);
+		--outline-switch: 1px solid rgb(53, 52, 48);
 	}
 
 	.page {
 		background-image: url('../images/cover-image-light.png');
-	}
-
-	.header__theme-menu-button_active {
-		--outline-switch: 1px solid rgb(53, 52, 48);
-		outline: var(--outline-switch);
-		pointer-events: none;
 	}
 
 	.header__decoration {
@@ -48,10 +45,4 @@
 
 .theme_light .header__decoration {
 	display: none;
-}
-
-.theme_light .header__theme-menu-button_active {
-	--outline-switch: 1px solid rgb(53, 52, 48);
-	outline: var(--outline-switch);
-	pointer-events: none;
 }

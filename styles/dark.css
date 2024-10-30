@@ -9,10 +9,13 @@
 	--main-title-color: #db00ff;
 	--bg-cover: #000028;
 	--text-color-alt: #000028;
+	--outline-switch-opacity: 1px solid rgba(255, 0, 112, 0.4);
+	--outline-switch: 1px solid rgb(255, 0, 112);
 	--font-family-base: 'IBM Plex mono', sans-serif;
 	--shadow: 4px 4px 0 var(--accent-color);
+		--shadow-alt: 2px 2px 0 var(--accent-color);
+	--main-color: #ff0070;
 }
-
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -22,7 +25,11 @@
 		--bg-cover: #000028;
 		--text-color-alt: #000028;
 		--font-family-base: 'IBM Plex mono', sans-serif;
+		--outline-switch-opacity: 1px solid rgba(255, 0, 112, 0.4);
+		--outline-switch: 1px solid rgb(255, 0, 112);
 		--shadow: 4px 4px 0 var(--accent-color);
+			--shadow-alt: 2px 2px 0 var(--accent-color);
+		--main-color: #ff0070;
 	}
 
 	.page {

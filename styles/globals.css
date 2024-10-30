@@ -57,6 +57,10 @@ a {
 	line-height: inherit;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* Сбрасываем стили у кнопок */
 button {
 	padding: 0;

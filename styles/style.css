@@ -117,19 +117,18 @@
 }
 
 .header__theme-menu-button_active {
-	--outline-switch: 1px solid rgba(255, 0, 112);
 	outline: var(--outline-switch);
 	pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-	outline: var(--outline-switch);
+	outline: var(--outline-switch-opacity);
 }
 
 .header__theme-menu-button:focus-visible {
 	--outline-switch: 1px solid rgba(255, 0, 112);
 	outline: none;
-	border-bottom: var(--outline-switch);
+	border-bottom: var(--outline-switch-opacity);
 }
 /* Header ==================================== */
 
@@ -182,6 +181,19 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+}
+
+.info__link {
+	text-shadow: var(--shadow-alt);
+}
+
+.info__link:hover {
+	border-bottom: 2px solid var(--text-color);
+}
+
+.info__link:focus-visible {
+	outline: none;
+	outline: 2px solid var(--text-color);
 }
 
 /* ======================================= */
