@@ -16,10 +16,13 @@
 	--outline-switch: 1px solid rgb(255, 0, 112);
 	--padding-y: 20px;
 	--paddind-x: 20px;
+
+	--section-padding: 40px;
 }
 
 @media (max-width: 480px) {
 	:root {
+		--section-padding: 25px;
 		--paddind-x: 10px;
 		--padding-y: 10px;
 	}
