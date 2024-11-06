@@ -139,8 +139,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-	--outline-switch: 1px solid rgba(255, 0, 112);
-	border-bottom: var(--outline-switch-opacity);
+	border-bottom: var(--outline-switch);
 	outline: none;
 }
 
@@ -220,6 +219,12 @@
 	color: var(--text-color-alt);
 }
 
+.card__description {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
 .card__title--normal {
 	font-weight: normal;
 }
@@ -252,6 +257,7 @@
 }
 
 .gallery__title {
+	color: var(--text-color-alt);
 	margin-block-end: 20px;
 }
 
